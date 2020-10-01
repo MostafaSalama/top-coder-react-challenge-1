@@ -12,4 +12,4 @@ function useCounter() {
         }
         return [counter,increase,decrease] ;
 }
-export default useCounter;  
+export default useCounter;
