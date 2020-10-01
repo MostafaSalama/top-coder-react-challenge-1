@@ -3,6 +3,7 @@ import {BrowserRouter, Link, Route} from 'react-router-dom';
 import './App.css'
 import Home from "./views/Home";
 import About from "./views/About";
+import SpeedCounterPage from "./views/SpeedCounter";
 function App() {
 	return (
 		<div>
@@ -35,6 +36,7 @@ const AppRoutes = ()=>{
 		<>
 			<Route path='/' exact><Home/></Route>
 			<Route path='/about'><About/></Route>
+			<Route path='/speed-counter'><SpeedCounterPage/></Route>
 			</>
 	)
 }

@@ -1,16 +1,16 @@
 import React from 'react' ;
-import useCounter from "../hooks/useCounter";
+import useSpeed from "../hooks/useSpeed";
 
 const SpeedCounter = ()=>{
-    const [counter,increase,decrease] = useCounter();
+    const [speed,increase,decrease] = useSpeed();
     return (
         <div>
-            <p>Current Counter is <span>{counter}</span></p>
+            <p>Current Speed <span>{speed}</span></p>
             <div>
-                <button onClick={increase}>+</button>
-                <button onClick={decrease}>-</button>
+                <button onClick={increase}>Increase Speed</button>
+                <button onClick={decrease}>Decrease Speed</button>
             </div>
         </div>
     )
 }
-export default SpeedCounter; 
+export default SpeedCounter;
