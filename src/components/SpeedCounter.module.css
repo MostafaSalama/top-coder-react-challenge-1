@@ -2,6 +2,12 @@
     text-align: center;
     margin-top: 4rem;
 }
+.text {
+    font-size: 30px;
+}
+.current_speed {
+    color: #3f51b5;
+}
 .btn {
     cursor: pointer;
     padding: 10px 16px;
