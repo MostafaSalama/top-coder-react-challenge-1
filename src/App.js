@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Link, Route} from 'react-router-dom';
 import './App.css'
 import Home from "./views/Home";
+import About from "./views/About";
 function App() {
 	return (
 		<div>
@@ -33,7 +34,7 @@ const AppRoutes = ()=>{
 	return (
 		<>
 			<Route path='/' exact><Home/></Route>
-			<Route path='/about'>about</Route>
+			<Route path='/about'><About/></Route>
 			</>
 	)
 }
