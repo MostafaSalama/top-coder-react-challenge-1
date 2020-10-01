@@ -1,11 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import {BrowserRouter, Link, Route} from 'react-router-dom';
 import './App.css'
+import Home from "./views/Home";
 function App() {
 	return (
 		<div>
 			<BrowserRouter>
 				<AppLinks />
+				<AppRoutes/>
 			</BrowserRouter>
 		</div>
 	);
@@ -27,4 +29,12 @@ const AppLinks = () => {
 		</nav>
 	);
 };
+const AppRoutes = ()=>{
+	return (
+		<>
+			<Route path='/' exact><Home/></Route>
+			<Route path='/about'>about</Route>
+			</>
+	)
+}
 export default App;
